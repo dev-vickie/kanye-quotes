@@ -6,8 +6,8 @@ It has a nice minimalistic UI
 
 Main packages used:
  ```dart
- http - storage and fetching of the podcast files
- goole_fonts - database for podcast information
+ http -making network request to API
+ goole_fonts - styling
  ```
 # Screenshots
 <div align="center">
