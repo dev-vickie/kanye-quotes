@@ -16,10 +16,12 @@ class _MyHomePageState extends State<MyHomePage> {
     getQuote();
   }
 
+  final themeColor = Colors.green.withOpacity(0.5);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pinkAccent.withOpacity(0.5),
+      backgroundColor: themeColor,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
@@ -47,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Positioned.fill(
                     child: Container(
-                      color: Colors.pinkAccent.withOpacity(0.5),
+                      color: themeColor,
                     ),
                   ),
                   Align(
@@ -77,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             );
           }
           return Container(
-            color: Colors.pinkAccent.withOpacity(0.5),
+            color: themeColor,
             child: Center(
               child: CircularProgressIndicator(
                 color: Colors.pinkAccent.withOpacity(0.3),
@@ -96,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           'Next Quote',
           style: GoogleFonts.acme(fontSize: 20),
         ),
-        backgroundColor: Colors.pink[400],
+        backgroundColor: themeColor,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
